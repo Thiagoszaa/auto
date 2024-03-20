@@ -1,0 +1,34 @@
+import pyautogui
+from time import sleep
+
+pyautogui.click(1573, 189, duration=3)
+pyautogui.press("enter")
+pyautogui.click(1103,258, duration=5)
+
+# Abrindo o arquivo e lendo as linhas
+with open('empresas.txt.txt', 'r') as arquivo:
+    for linha in arquivo:
+        # Dividindo a linha nos espaços em branco e removendo espaços extras
+        para, introducao, resume = map(str.strip, linha.split("\\"))
+        
+        # Enviar para
+        pyautogui.click(1147, 412, duration=6)
+        pyautogui.write(para)
+        
+        # Introdução
+        pyautogui.click(1697, 460, duration=6)
+        pyautogui.write(introducao)
+        
+        # Resume
+        pyautogui.click(1177, 526, duration=6)  
+        
+        pyautogui.write(resume)
+        
+        # Clicar em enviar 
+        pyautogui.click(1190, 958, duration=4)
+
+        pyautogui.click(1103,258, duration=5)
+
+
+        
+        sleep(1)
