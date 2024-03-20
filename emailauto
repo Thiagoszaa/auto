@@ -13,20 +13,20 @@ pyautogui.click(1103,258, duration=5)
 with open('empresas.txt.txt', 'r') as arquivo:
     for linha in arquivo:
         # Dividindo a linha nos espaços em branco e removendo espaços extras
-        para, introducao, resume = map(str.strip, linha.split("\\"))
+        destinatario, assunto, corpo = map(str.strip, linha.split("\\"))
         
-        # Enviar para
+        # Infos do destinatario
         pyautogui.click(1147, 412, duration=6)
-        pyautogui.write(para)
+        pyautogui.write(destinatario)
         
         # Introdução
         pyautogui.click(1697, 460, duration=6)
-        pyautogui.write(introducao)
+        pyautogui.write(assunto)
         
-        # Resume
+        # Corpo do email
         pyautogui.click(1177, 526, duration=6)  
         
-        pyautogui.write(resume)
+        pyautogui.write(corpo)
         
         # Clicar em enviar 
         pyautogui.click(1190, 958, duration=4)
