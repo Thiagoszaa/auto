@@ -1,3 +1,7 @@
+# A principal função deste código, é ter a capacidade de enviar email automaticos, eu usei o pyautogui onde posso
+automatizar o teclado e o mouse, e para ter a informação da onde o mouse deveria clicar e usei o mouseInfo.
+
+
 import pyautogui
 from time import sleep
 
@@ -27,8 +31,7 @@ with open('empresas.txt.txt', 'r') as arquivo:
         # Clicar em enviar 
         pyautogui.click(1190, 958, duration=4)
 
+        # Repetir o processo 
         pyautogui.click(1103,258, duration=5)
 
-
-        
         sleep(1)
