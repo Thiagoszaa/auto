@@ -5,6 +5,8 @@ automatizar o teclado e o mouse, e para ter a informação da onde o mouse dever
 import pyautogui
 from time import sleep
 
+#Usando o mouseInfo para obter os parametros para fazer a pesquisa no OperaGx
+
 pyautogui.click(1573, 189, duration=3)
 pyautogui.press("enter")
 pyautogui.click(1103,258, duration=5)
