@@ -11,7 +11,7 @@ pyautogui.click(1573, 189, duration=3)
 pyautogui.press("enter")
 pyautogui.click(1103,258, duration=5)
 
-# Abrindo o arquivo e lendo as linhas
+# Abrir o arquivo e ler as linhas
 with open('empresas.txt.txt', 'r') as arquivo:
     for linha in arquivo:
         # Dividindo a linha nos espaços em branco e removendo espaços extras
